@@ -13,8 +13,8 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = (props) => {
 
     const [posts, setPosts] = useState([]);
-    
-    
+
+
     useEffect(() => {
         const posts = blogPost.data;
         setPosts(posts);
@@ -22,19 +22,19 @@ const Sidebar = (props) => {
 
 
 
-  return(
-      <div className="sidebarContainer" style={{
-          width: props.width
-      }}>
+    return (
+        <div className="sidebarContainer" style={{
+            width: props.width
+        }}>
             <Card style={{ marginBottom: '20px', padding: '20px', boxSizing: 'border-box' }}>
                 <div className="cardHeader">
                     <span>About Us</span>
                 </div>
                 <div className="profileImageContainer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRGAb43NxZswWRLw9RoxC8YwykXlLy_efq2r674Xj0ffRR3D-0P" alt="" />
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="" />
                 </div>
                 <div className="cardBody">
-                    <p className="personalBio">My name is Rizwan  Khan I am a software developer specialization in Front end developement....:)</p>
+                    <p className="personalBio">My name is Harish Kumar S I am a software developer specialization in Front end developement....:)</p>
                 </div>
             </Card>
 
@@ -60,17 +60,17 @@ const Sidebar = (props) => {
                                         <span>{post.postedOn}</span>
                                     </div>
                                 </NavLink>
-                                
+
                             );
                         })
                     }
                 </div>
 
             </Card>
-      </div>
-    
-   )
+        </div>
 
- }
+    )
+
+}
 
 export default Sidebar

@@ -7,12 +7,12 @@ import './style.css';
 **/
 
 const Logo = (props) => {
-  return(
+  return (
     <div className="logo">
-        <a href="#">Rizwan Khan</a>
+      <a href="#">Harish Kumar S</a>
     </div>
-   )
+  )
 
- }
+}
 
 export default Logo
